@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balonazo TV | 2023-2024</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #33333300;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #logo2 img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #widget-container {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+
+        #partidosdirecto {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .rectangulos {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .rectangulos h2 {
+            font-size: 18px;
+        }
+
+        /* Estilos para posicionar el iframe en la parte de abajo a la izquierda */
+        @media (min-width: 768px) {
+            /* Estilos para pantallas más grandes */
+            #widget-container {
+                float: left;
+                width: 50%;
+            }
+        }
+
+        /* Estilos para pantallas más pequeñas, como dispositivos móviles */
+        @media (max-width: 767px) {
+            #widget-container {
+                position: relative; /* Cambiamos la posición a relativa */
+                width: 100%;
+            }
+
+            iframe {
+                position: absolute; /* Cambiamos la posición a absoluta */
+                bottom: 0; /* Lo posicionamos en la parte inferior */
+                left: 0; /* Lo posicionamos a la izquierda */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#">
+                <img src="img/IPTVFutbol.png" alt="Logo Balonazo TV">
+            </a>
+        </div>
+        <nav>
+            <div id="logo2">
+                <a href="https://discord.gg/caX5K5RkFc">
+                    <img src="img/discordlogo.png" width="170" height="140" alt="Logo Discord">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Resto de tu contenido -->
+    <div id="partidosdirecto">
+        <a href="#">
+            <img src="img/PARTIDOSDIRECTO.png" alt="Partidos en directo">
+        </a>
+    </div>
+    <div class="rectangulos">
+        <a href="lalagihypermotion1.html">LaLiga Hypermotion TV 1</a>.
+    </div>
+
+    <div class="rectangulos">
+        <a href="lalagihypermotion2.html">LaLiga Hypermotion TV 2</a>.
+    </div>
+
+    <div class="rectangulos">
+        <h2>Link OFFLINE</h2>
+    </div>
+
+    <div class="rectangulos">
+        <h2>Link OFFLINE</h2>
+    </div>
+    <!-- Repite las secciones de .rectangulos según sea necesario -->
+
+    <div id="widget-container">
+        <iframe id="listapartidos" src="https://widgets.futbolenlatv.com/partidos/agenda?color=FF0000&culture=es-ES" frameborder="0"></iframe>
+    </div>
+</body>
+</html>
