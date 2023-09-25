@@ -1,7 +1,7 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box; /* Agregamos box-sizing para que el padding y el borde no aumenten el ancho del elemento */
 }
 
 h1 {
@@ -9,23 +9,22 @@ h1 {
     text-align: center;
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
-    padding: 20;
-    
+    padding: 20px;
 }
 
-nav{
+nav {
     margin-top: 0px;
 }
 
-nav ul{
-    background-color: #0000007c;
+nav ul {
+    background-color: #00000050;
     width: 100%;
     list-style-type: none;
     text-align: center;
 }
 
-nav li{
-    display:inline-flex
+nav li {
+    display: inline-flex;
 }
 
 nav a {
@@ -35,44 +34,71 @@ nav a {
     width: 150px;
 }
 
-nav li:hover{
+nav li:hover {
     background-color: rgb(255, 255, 255);
 }
 
-body{
+body {
     background-image: url("img/white-dots-black-background-vector.jpg");
 }
 
-#logo{
+#logo {
     padding: 20px;
     text-align: center;
 }
 
-#logo2{
+#logo2 {
     text-align: center;
-    
 }
 
-#div1{
+#div1 {
     color: white;
     background-color: rgba(0, 0, 0, 0.404);
     text-align: center;
-    width: 200;
-    height: 100;
+    width: 200px; /* Agregamos "px" para especificar unidades */
+    height: 100px; /* Agregamos "px" para especificar unidades */
 }
 
-#titulopartidos{
+#titulopartidos {
     color: rgb(0, 255, 13);
-    
 }
 
-#partidosdirecto{
+#partidosdirecto {
     text-align: center;
 }
 
-.rectangulos{
+.rectangulos {
     text-align: center;
     color: white;
     margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.342);
+}
+
+#listapartidos {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Media Query para pantallas más pequeñas, por ejemplo, dispositivos móviles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* Reducimos el tamaño de fuente */
+    }
+
+    nav ul {
+        background-color: rgba(0, 0, 0, 0.7); /* Hacemos el fondo del menú más transparente */
+    }
+
+    nav a {
+        width: auto; /* Permitimos que el ancho se ajuste automáticamente */
+        padding: 5px 10px; /* Ajustamos el espacio interior */
+    }
+
+    .rectangulos {
+        margin-top: 10px; /* Reducimos el margen superior */
+    }
+}
+
+#iframe1{
+    padding: 30px;
 }
